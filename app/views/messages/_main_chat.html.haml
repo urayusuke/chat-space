@@ -1,5 +1,3 @@
-!!!
-%body
 .caht-main
   .chat-main__group_info
     %ul 
@@ -18,3 +16,9 @@
       %p.chat-main__message-list-date 2019/11/20(Wed) 12:30:01
     %p.chat-main__message-list-comment 今日は夜から雨
   .chat-main__message-form
+    .input-box
+      %input{type: 'text',placeholder: 'type a message', class:'input-box-text'}
+      %label{class:"input-box-image"}
+        = icon('far','image')
+        %input{type: "file",class: "input-box-image-file"}
+    %input{type: 'submit', value:'Send',class:'chat-main__message-form-btn'}
