@@ -9,12 +9,9 @@
         =link_to edit_user_path(current_user), class: "top-items__icons-cog" do
           = icon('fas', 'cog')
   .side-bar__group-list
-    %ul
-      %li
-        =link_to "techcamp", "#"
-        %p
-          =link_to "まだメッセージがありません", "#"
-      %li
-        =link_to "techcamp", "#"
-        %p
-          =link_to "まだメッセージがありません", "#"
+    - current_user.groups.each do|group|
+      %ul
+        %li
+          =link_to "#" do
+            = group.name
+          %p=link_to "まだメッセージがありません","#"
