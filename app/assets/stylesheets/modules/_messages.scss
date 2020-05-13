@@ -121,35 +121,33 @@ $link_color:#38aef0;
     height: 90px;
     padding: 20px 40px;
     display: flex;
-    .input-box{
-      background-color: $text_color;
-      width: 100vw;
-      height: 50px;
+    .new_message{
       display: flex;  
       position: relative;
-      &-text{
-        width: 100%;
+      .input-box-text{
+        height: 50px;
+        width: calc(100vw - 510px) ;
         padding-left: 10px;
         color: #434a54;
         border-style: none;
       }
-      &-image{
+      .input-box-image{
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 8px;
+        right: 130px;
         cursor: pointer;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+
         &-file{
           display: none;
         }
       }
     }
     &-btn{
-      width: 100px;
       background-color: $link_color;
       color: white;
       border-style: none;
-      margin-left: 15px;
+      margin-left: 20px;
       padding: 0 30px;
       text-align: center;
     }

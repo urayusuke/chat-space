@@ -12,6 +12,6 @@
     - current_user.groups.each do|group|
       %ul
         %li
-          =link_to "#" do
+          =link_to group_messages_path(group) do
             = group.name
-          %p=link_to "まだメッセージがありません","#"
+          %p= group.show_last_message
