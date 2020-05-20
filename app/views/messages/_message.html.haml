@@ -8,4 +8,4 @@
     %p.chat-main__message-list-comment
       - if message.content.present? 
         = message.content
-      = image_tag message.image.url, class: '.chat-main__message-list-comment' if message.image.present?
+  = image_tag message.image.url, class: '.chat-main__message-list-comment-image' if message.image.present?

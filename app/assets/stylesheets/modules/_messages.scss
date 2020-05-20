@@ -99,6 +99,7 @@ $link_color:#38aef0;
     &-list{
       display: flex;
       &-name{
+        display: block;
         font-weight: bold;
         font-size: 16px ;
         color:#1a1515;
@@ -113,7 +114,7 @@ $link_color:#38aef0;
       font-size: 14px ;
       color:#434A54;
       margin-top: 12px;
-      margin-bottom: 46px;
+      margin-bottom: 10px;
     }
   }
   &__message-form{
@@ -152,4 +153,8 @@ $link_color:#38aef0;
       text-align: center;
     }
   }
+}
+
+.message{
+  padding-bottom: 46px;
 }
